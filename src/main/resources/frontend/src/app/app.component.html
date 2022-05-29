@@ -1,0 +1,39 @@
+<div class="container d-flex flex-column align-items-center mt-4">
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">Search person</h5>
+
+      <form>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">ID</span>
+          <input
+            #peronalIdInput
+            type="text"
+            class="form-control"
+            (input)="onInput(peronalIdInput.value)"
+            [value]="personalId"
+            placeholder="Personal Id 11-digits"
+          />
+        </div>
+
+        <app-date-picker
+          (dateOfBirthEmiter)="onDateSelect($event)"
+        ></app-date-picker>
+
+        <button
+          type="button"
+          (click)="sendGetReq()"
+          class="btn btn-primary mt-3 mb-3"
+        >
+          Search
+        </button>
+      </form>
+
+      <p *ngIf="errorMessage" class="text-danger error">{{ errorMessage }}</p>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="persons.length" class="container mt-4">
+  <app-table [persons]="persons"></app-table>
+</div>

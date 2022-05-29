@@ -1,0 +1,31 @@
+2022-05-25 16:12:23.506  INFO 6820 --- [main] c.d.e.ErgoAssignmentApplication          : Starting ErgoAssignmentApplication using Java 11.0.13 on Dators with PID 6820 (C:\Users\DG\Desktop\ergoAssignment\target\classes started by DG in C:\Users\DG\Desktop\ergoAssignment)
+2022-05-25 16:12:23.508  INFO 6820 --- [main] c.d.e.ErgoAssignmentApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-25 16:12:24.012  INFO 6820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 16:12:24.050  INFO 6820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2022-05-25 16:12:24.410  INFO 6820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-25 16:12:24.417  INFO 6820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 16:12:24.417  INFO 6820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-25 16:12:24.529  INFO 6820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 16:12:24.529  INFO 6820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 978 ms
+2022-05-25 16:12:24.549  INFO 6820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-25 16:12:24.654  INFO 6820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-25 16:12:24.664  INFO 6820 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mydb'
+2022-05-25 16:12:24.826  INFO 6820 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2022-05-25 16:12:24.957  INFO 6820 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-05-25 16:12:25.092  INFO 6820 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2022-05-25 16:12:25.095  INFO 6820 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2022-05-25 16:12:25.164  INFO 6820 --- [main] liquibase.changelog                      : Custom SQL executed
+2022-05-25 16:12:25.165  INFO 6820 --- [main] liquibase.changelog                      : ChangeSet db/changelog/changes/0001-create-person-table.sql::1::dagnis ran successfully in 27ms
+2022-05-25 16:12:25.182  INFO 6820 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-05-25 16:12:25.261  INFO 6820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 16:12:25.295  INFO 6820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-25 16:12:25.399  INFO 6820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 16:12:25.479  INFO 6820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-25 16:12:25.853  INFO 6820 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 16:12:25.860  INFO 6820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 16:12:26.122  WARN 6820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 16:12:26.374  INFO 6820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-25 16:12:26.385  INFO 6820 --- [main] c.d.e.ErgoAssignmentApplication          : Started ErgoAssignmentApplication in 3.212 seconds (JVM running for 3.962)
+2022-05-25 16:12:46.739  INFO 6820 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 16:12:46.742  INFO 6820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-25 16:12:46.746  INFO 6820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
