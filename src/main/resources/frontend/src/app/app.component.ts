@@ -33,6 +33,11 @@ export class AppComponent {
   }
 
   sendGetReq(): void {
+    if (!this.dateOfBirth) {
+      this.errorMessage = 'No date selected';
+      return;
+    }
+
     let params = { personalId: this.personalId, dateOfBirth: this.dateOfBirth };
 
     this.http
