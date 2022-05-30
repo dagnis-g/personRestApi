@@ -57,6 +57,7 @@ export class AppComponent {
         }
       });
     this.personalId = '';
+    this.dateOfBirth = '';
     this.child.selectedDate = undefined;
   }
 }

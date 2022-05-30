@@ -20,24 +20,25 @@ class ErgoAssignmentApplicationTests {
 
     @Test
     void shouldFindPerson() {
-        String dobFromParam = "1924-03-03";
-        String personalId = "52191485762";
-
-        LocalDate dobFromDb = LocalDate.parse("1924-03-03");
-        String firstName = "Eloise";
-        String lastName = "Swetenham";
+        LocalDate dobFromDb = LocalDate.parse("1924-06-06");
+        String personalId = "52191485777";
+        String firstName = "Jane";
+        String lastName = "Doe";
         Gender gender = Gender.FEMALE;
+        String dobFromParam = "1924-06-06";
+
+        Person person = new Person(personalId, firstName, lastName, dobFromDb, gender);
+        personRepository.save(person);
 
         Person personToFind = personController.findByIdAndDob(personalId, dobFromParam);
-        Person personExpected = new Person(personalId, firstName, lastName, dobFromDb, gender);
-
-        Assertions.assertEquals(personExpected, personToFind);
+        Assertions.assertEquals(person, personToFind);
+        personRepository.delete(person);
     }
 
     @Test
     void shouldNotFindPersonWithNonExistentID() {
         LocalDate dobFromDb = LocalDate.parse("1924-03-03");
-        Assertions.assertNull(personRepository.findPersonByPersonalIdAndDateOfBirth("12345678900", dobFromDb));
+        Assertions.assertFalse(personRepository.findPersonByPersonalIdAndDateOfBirth("12345678900", dobFromDb).isPresent());
     }
 
 }

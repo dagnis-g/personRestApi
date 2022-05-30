@@ -1,2 +1,26 @@
 30-05-2022 11:24:00.150 [http-nio-8080-exec-1] WARN  c.d.ergoassignment.PersonService.findPersonByIdAndDob - PersonalId invalid:2314234
 30-05-2022 11:24:42.710 [http-nio-8080-exec-1] WARN  c.d.ergoassignment.PersonService.findPersonByIdAndDob - PersonalId invalid:4234234
+30-05-2022 14:30:05.455 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Optional[Person(personalId=52191485777, firstName=Jane, lastName=Doe, dateOfBirth=1924-06-06, gender=FEMALE)]
+30-05-2022 14:36:50.151 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Optional[Person(personalId=52191485777, firstName=Jane, lastName=Doe, dateOfBirth=1924-06-06, gender=FEMALE)]
+30-05-2022 14:37:53.820 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Optional[Person(personalId=52191485777, firstName=Jane, lastName=Doe, dateOfBirth=1924-06-06, gender=FEMALE)]
+30-05-2022 14:40:31.895 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Optional[Person(personalId=52191485777, firstName=Jane, lastName=Doe, dateOfBirth=1924-06-06, gender=FEMALE)]
+30-05-2022 14:41:36.526 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Optional[Person(personalId=52191485777, firstName=Jane, lastName=Doe, dateOfBirth=1924-06-06, gender=FEMALE)]
+30-05-2022 14:41:57.599 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Optional[Person(personalId=52191485762, firstName=Eloise, lastName=Swetenham, dateOfBirth=1924-03-03, gender=FEMALE)]
+30-05-2022 14:41:57.640 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - not found byID:12345678900 Dob: 1924-03-03
+30-05-2022 14:41:57.649 [main] WARN  c.d.ergoassignment.PersonService.findPersonByIdAndDob - PersonalId invalid:12344
+30-05-2022 14:43:38.753 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Optional[Person(personalId=52191485762, firstName=Eloise, lastName=Swetenham, dateOfBirth=1924-03-03, gender=FEMALE)]
+30-05-2022 14:44:20.691 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Optional[Person(personalId=52191485762, firstName=Eloise, lastName=Swetenham, dateOfBirth=1924-03-03, gender=FEMALE)]
+30-05-2022 14:44:49.858 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Person(personalId=52191485762, firstName=Eloise, lastName=Swetenham, dateOfBirth=1924-03-03, gender=FEMALE)
+30-05-2022 14:46:07.228 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Person(personalId=52191485762, firstName=Eloise, lastName=Swetenham, dateOfBirth=1924-03-03, gender=FEMALE)
+30-05-2022 14:46:07.260 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - not found byID:12345678900 Dob: 1924-03-03
+30-05-2022 14:46:07.269 [main] WARN  c.d.ergoassignment.PersonService.findPersonByIdAndDob - PersonalId invalid:12344
+30-05-2022 14:48:07.448 [http-nio-8080-exec-1] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Person(personalId=52191485762, firstName=Eloise, lastName=Swetenham, dateOfBirth=1924-03-03, gender=FEMALE)
+30-05-2022 14:48:09.749 [http-nio-8080-exec-2] WARN  c.d.ergoassignment.PersonService.findPersonByIdAndDob - PersonalId invalid:
+30-05-2022 14:48:47.420 [http-nio-8080-exec-3] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - not found byID:12345678900 Dob: 2022-04-06
+30-05-2022 14:48:53.247 [http-nio-8080-exec-4] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - not found byID:12345678900 Dob: 2022-04-06
+30-05-2022 14:48:59.150 [http-nio-8080-exec-5] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - not found byID:12345678900 Dob: 2022-04-06
+30-05-2022 14:49:44.980 [http-nio-8080-exec-6] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - not found byID:12345678900 Dob: 2022-04-14
+30-05-2022 14:57:49.883 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Person(personalId=52191485777, firstName=Jane, lastName=Doe, dateOfBirth=1924-06-06, gender=FEMALE)
+30-05-2022 14:58:02.933 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - Found person: Person(personalId=52191485762, firstName=Eloise, lastName=Swetenham, dateOfBirth=1924-03-03, gender=FEMALE)
+30-05-2022 14:58:02.961 [main] INFO  c.d.ergoassignment.PersonService.findPersonByIdAndDob - not found byID:12345678900 Dob: 1924-03-03
+30-05-2022 14:58:02.969 [main] WARN  c.d.ergoassignment.PersonService.findPersonByIdAndDob - PersonalId invalid:12344

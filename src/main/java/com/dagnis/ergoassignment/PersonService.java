@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -25,13 +26,13 @@ public class PersonService {
         }
 
         LocalDate dateOfBirth = LocalDate.parse(dob);
-        Person person = personRepository.findPersonByPersonalIdAndDateOfBirth(personalId, dateOfBirth);
-        if (person == null) {
+        Optional<Person> person = personRepository.findPersonByPersonalIdAndDateOfBirth(personalId, dateOfBirth);
+        if (person.isEmpty()) {
             log.info("not found by" + "ID:" + personalId + " Dob: " + dob);
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "No such person found");
         } else {
-            log.info("Found person: " + person);
-            return person;
+            log.info("Found person: " + person.get());
+            return person.get();
         }
     }
 
