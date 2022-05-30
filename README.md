@@ -25,6 +25,12 @@ To access H2 database navigate to
 
 ```shell
 Browser: http://localhost:8080/h2-console/
+
+Driver Class: org.h2.Driver
+JDBC URL: jdbc:h2:mem:mydb
+User Name: sa
+Password: 
+
 ```
 
 ### Available persons
