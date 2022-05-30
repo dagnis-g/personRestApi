@@ -19,6 +19,14 @@ ng serve
 Browser: http://localhost:4200/
 ```
 
+###H2
+
+To access H2 database navigate to
+
+```shell
+Browser: http://localhost:8080/h2-console/
+```
+
 ### Available persons
 
 On Spring Boot start-up Liquibase inserts 13 persons in H2 database.
@@ -38,4 +46,5 @@ On Spring Boot start-up Liquibase inserts 13 persons in H2 database.
 | 52806714046  |   Eimile   |     Grimme |    1999-10-18 | FEMALE |
 | 51943857663  |    Lynn    |   Bonnyson |    1950-09-13 | FEMALE |
 | 78788186547  |    Dill    |   Edgeller |    1963-02-14 |   MALE |
+
 # personRestApi
