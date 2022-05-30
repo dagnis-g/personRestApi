@@ -27,7 +27,7 @@ On Spring Boot start-up Liquibase inserts 13 persons in H2 database.
 |--------------|:----------:|-----------:|--------------:|-------:|
 | 52191485762  |   Eloise   |  Swetenham |    1924-03-03 | FEMALE |
 | 14859493223  |  Mitchel   |      Purse |    1949-01-08 |   MALE |
-| 75154099672  |            |     Cayser |    1963-12-15 | FEMALE |
+| 75154099672  |   Vinnie   |     Cayser |    1963-12-15 | FEMALE |
 | 18728057682  |  Danyelle  | Fitzsimons |    1963-09-09 | FEMALE |
 | 39720403916  | Madeleine  | Warrington |    1989-09-26 | FEMALE |
 | 74313696167  |  Kahaleel  |      Beven |    1958-02-28 |   MALE |
