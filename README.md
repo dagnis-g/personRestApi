@@ -10,7 +10,7 @@ To run Spring Boot application. In project root directory
 mvn spring-boot:run
 ```
 
-To run Angular navigate to src/main/resources/frontend
+To run Angular navigate to /frontend
 
 ```shell
 npm install 
